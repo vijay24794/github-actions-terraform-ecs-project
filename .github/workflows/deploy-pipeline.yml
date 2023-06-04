@@ -48,6 +48,11 @@ jobs:
 
       - name: Run Terraform apply/destroy
         working-directory: ./iac
+        run: terraform plan -lock=false
+        
+
+      - name: Run Terraform apply/destroy
+        working-directory: ./iac
         run: terraform ${{ env.TERRAFORM_ACTION }} -auto-approve
 
       - name: Get Terraform output image name
