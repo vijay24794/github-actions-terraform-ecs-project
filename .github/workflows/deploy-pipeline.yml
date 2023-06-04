@@ -12,7 +12,7 @@ env:
   REPOSITORY_NAME: application-codes
   WEB_FILE_ZIP: rentzone.zip
   WEB_FILE_UNZIP: rentzone
-  TERRAFORM_ACTION: apply
+  TERRAFORM_ACTION: destroy
 
 jobs:
   # Configure AWS credentials 
@@ -48,12 +48,7 @@ jobs:
 
       - name: Run Terraform apply/destroy
         working-directory: ./iac
-        run: terraform plan -lock=false
-        
-
-      - name: Run Terraform apply/destroy
-        working-directory: ./iac
-        run: terraform ${{ env.TERRAFORM_ACTION }} -lock=false -auto-approve
+        run: terraform ${{ env.TERRAFORM_ACTION }} -auto-approve
 
       - name: Get Terraform output image name
         if: env.TERRAFORM_ACTION == 'apply'
