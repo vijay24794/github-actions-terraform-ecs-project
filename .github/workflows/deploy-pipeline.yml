@@ -13,7 +13,7 @@ env:
   WEB_FILE_ZIP: rentzone.zip
   WEB_FILE_UNZIP: rentzone
   FLYWAY_VERSION: 9.8.1
-  TERRAFORM_ACTION: apply
+  TERRAFORM_ACTION: destroy
 
 jobs:
   # Configure AWS credentials 
