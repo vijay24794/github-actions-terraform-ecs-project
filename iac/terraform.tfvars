@@ -22,8 +22,8 @@ database_instance_class      = "db.t2.micro"
 publicly_accessible          = "false"
 
 # acm variables
-domain_name       = "jrcworks.com"
-alternative_names = "*.jrcworks.com"
+domain_name       = "jrcwork.com"
+alternative_names = "*.jrcwork.com"
 
 # s3 variables
 env_file_bucket_name = "jrc-rentzone-app-env-file-bucket"
