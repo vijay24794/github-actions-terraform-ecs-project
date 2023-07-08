@@ -1,7 +1,7 @@
 # environment variables
 region       = "us-east-1"
 project_name = "rentzone"
-environment  = "dev"
+environment  = "preprod"
 
 # vpc variables
 vpc_cidr                     = "10.0.0.0/16"
