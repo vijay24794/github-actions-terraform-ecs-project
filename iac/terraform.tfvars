@@ -22,11 +22,11 @@ database_instance_class      = "db.t2.micro"
 publicly_accessible          = "false"
 
 # acm variables
-domain_name       = "jrcworks.com"
-alternative_names = "*.jrcworks.com"
+domain_name       = "devops24794.com"
+alternative_names = "*.devops24794.com"
 
 # s3 variables
-env_file_bucket_name = "jrc-rentzone-app-env-file-bucket"
+env_file_bucket_name = "devops-rentzone-app-env-file-bucket"
 env_file_name        = "env-variables-file.env"
 
 # ecs variables
